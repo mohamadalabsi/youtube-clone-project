@@ -1,0 +1,110 @@
+
+.thumbnail{
+/* text is block element 
+and imges and buttons ars inline-bilock element 
+and inline element */
+ /* width: 300px;  with the width changes also the hight */
+ width: 100%;
+ /* display: block; */
+ /* height: 300px;
+ object-fit: contain;
+ object-fit: cover;
+ object-position: left;
+ border-width: 2px;
+ border-style: solid;
+ border-color: red; */
+}
+
+.video-titlel{
+ margin-top: 0;
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 20px;
+ margin-bottom: 10px;
+}
+/* .video-preview{
+  width: 300px;
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: top; 
+  } */
+
+  .video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+/* 
+  .channel-picture{
+    display: inline-block;
+   width: 50px; 
+    vertical-align: top; 
+  } without grid
+   */
+
+  /* .video-info{
+     display: inline-block; 
+     width: 200px; 
+     vertical-align: top;  
+  } */
+
+
+  .profile-picture{
+    width: 36px ;
+    border-radius:50px;
+
+  }
+  .thumbnail-row{
+    margin-bottom: 8px;
+    position:relative;
+  }
+  .video-author, .video-stats{
+    font-size: 12px;
+   color: rgb(97, 96, 96);
+  }
+  .video-author{
+    margin-bottom: 4px;
+  }
+  .video-grid{
+    /* font-family: Roboto, Arial; here for video-time class also this is inherited from  video-grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 16px;
+    row-gap: 40px;
+    cursor: pointer;
+  /* text-decoration: underline;  all paragraphs inside video-grid will chnage , this called inheritance */
+  /* border: 2px solid red; */
+  }
+  @media (max-width:750px) { 
+    .video-grid{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (min-width:751px) and (max-width:999px){
+   .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+  }
+  @media (min-width:1000px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .video-time{
+    /* font-family: Roboto, Arial; */
+   font-size: 12px;
+   font-weight: 500;
+   /* padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 4px;
+   padding-bottom: 4px; 
+   padding: 4px 10px 20px 30px;    and margin works the same way as paddding */
+   padding: 4px ;
+   border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+
+  }

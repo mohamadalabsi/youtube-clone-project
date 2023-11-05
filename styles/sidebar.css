@@ -1,0 +1,39 @@
+.sidebar{
+  position: fixed ;
+  left: 0px;
+  bottom: 0px;
+  top: 55px;
+  background-color: white;
+  width: 72px;
+  z-index: 200;
+  padding-top: 5PX;
+}
+
+.sidebar-link{
+  display: flex;
+  justify-content: center;  /*we made it flexbox to center them in the middel*/
+  align-items: center;
+  height: 74px;
+  /* flex-direction: row;        row=next to eachother*/
+  flex-direction: column;
+  cursor: pointer;
+}
+.sidebar-link:hover{
+  background-color: rgb(229, 227, 227);
+}
+
+/* .sidebar-link,
+.header{
+  this called selector  
+ 1- with. means we target class and here with two selector we type , and it means and but space here means inside
+ 2- without . we target element's name like button or img or div but with two selector we type space and it means means inside
+} */
+.sidebar-link img{   /*all images inside sidebar's link */
+  height: 24px;
+  margin-bottom: 4PX;
+
+}
+.sidebar-link div{
+  /* font-family: Roboto,arial; */
+  font-size: 10px;
+}
